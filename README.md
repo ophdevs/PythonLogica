@@ -1,2 +1,2 @@
 # PythonLogica
- Repositorio para aprender logica no trabalho
+ Repositorio para materia na faculdade
