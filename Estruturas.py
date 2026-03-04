@@ -10,7 +10,7 @@ for i in range(numQuantidade + 1):
 
 
 print ("Repeticao usando while")
-print ("-------------------------------------------------------")
+print ("---------------------------------")
 while  contador < numQuantidade :
     resultado2 = numContador * contador
     contador = contador + 1
