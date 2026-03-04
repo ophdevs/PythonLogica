@@ -2,6 +2,7 @@ numContador = int(input("Digite o número da tabuada: "))
 numQuantidade = int(input("Ate qual Numero? "))
 contador = 0
 
+print("repeticao usando for (laço)")
 
 for i in range(numQuantidade + 1):  
     resultado = numContador * i
@@ -9,7 +10,7 @@ for i in range(numQuantidade + 1):
 
 
 print ("Repeticao usando while")
-
+print ("-------------------------------------------------------")
 while  contador < numQuantidade :
     resultado2 = numContador * contador
     contador = contador + 1
