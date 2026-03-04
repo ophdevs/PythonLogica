@@ -1,10 +1,10 @@
-class carro:
-    def __init__(self, modelo, marca, ano):
+class Carro:
+    def __init__(self, marca, modelo, ano):
         self.modelo = modelo
         self.marca = marca
         self.ano = ano
 
-    def MostrarInfo(self):
+    def Mostrar_Info(self):
         print("marca: ", self.marca)
         print("modelo: ", self.modelo)
         print("ano", self.ano)
@@ -14,6 +14,6 @@ marcaCarro = input("marca do seu carro: ")
 modeloCarro = input ("modelo do seu carro: ")
 anoCarro = input ("ano do seu carro: ")
     
-carro1 = carro(marcaCarro, modeloCarro, anoCarro)
+carro1 = Carro(marcaCarro, modeloCarro, anoCarro)
 
-carro1.MostrarInfo()
+carro1.Mostrar_Info()
