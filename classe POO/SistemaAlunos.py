@@ -22,30 +22,45 @@ while True:
     try:
         opcao = int(input("Digite sua opcao: "))
     except ValueError:
-        print("seu valor esta errado")
+        print("Valor incorreto!")
 
     if opcao == 1:
 
-        print ("Cadastro Alunos")
-        print ("-----------------------------------")
-        nome = input("Nome: ")
-        matricula = input("Matricula: ")
-        nota = float(input("Nota: "))
+        condicao = True
 
-        aluno = aluno(nome, matricula, nota)
-        cadastro_alunos.append = aluno
+        while condicao:
+            print ("Cadastro Alunos")
+            print ("-----------------------------------")
+            nome = input("Nome: ")
+            matricula = input("Matricula: ")
+            nota = float(input("Nota: "))
+
+            alun = aluno(nome, matricula, nota)
+            cadastro_alunos.append (alun)
+
+            try: 
+                opcaoLista = input("Deseja continuar: s/n ")
+            except ValueError:
+                print("Valor incorreto! ")
+
+            if (opcaoLista.lower == 's'):
+                continue
+            elif (opcaoLista.lower == 'n'):
+                condicao = False
+            else:
+                print("Valor incorreto! ")
+                continue
 
     elif opcao == 2:
-        print("Listar Alunos")
-        print ("-----------------------------------")
-
-        for r in cadastro_alunos :
-            r.mostra_info
+            print("Listar Alunos")
             print ("-----------------------------------")
 
+            for r in cadastro_alunos :
+                r.mostra_info()
 
     elif opcao == 3:
         print("ola")
+
     elif opcao == 4:
         break
     
