@@ -38,10 +38,8 @@ while True:
             alun = aluno(nome, matricula, nota)
             cadastro_alunos.append (alun)
 
-            try: 
-                opcaoLista = input("Deseja continuar: s/n ")
-            except ValueError:
-                print("Valor incorreto! ")
+            opcaoLista = input("Deseja continuar: s/n ")
+        
 
             if (opcaoLista.lower == 's'):
                 continue
@@ -60,7 +58,7 @@ while True:
 
     elif opcao == 3:
         print("ola")
-
+      
     elif opcao == 4:
         break
     
