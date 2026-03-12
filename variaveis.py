@@ -1,3 +1,0 @@
-nome = "Pedro"
-idade = 20
-altura = 1.80
