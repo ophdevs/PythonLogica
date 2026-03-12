@@ -24,5 +24,7 @@ s1 = f"sua nota {nota} "
 s1 = "logica de programacao"
 print (s1[0:7])
  
+#len / tamanho
+
 tamanho = len(s1)
 print(tamanho)
